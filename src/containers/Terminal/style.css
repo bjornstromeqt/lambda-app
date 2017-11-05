@@ -1,0 +1,37 @@
+
+#terminal {
+    position: fixed;
+    background-color: #1b1b1b;
+    color: #fff;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 200px;
+}
+
+#terminal .terminal-container {
+    padding: 20px;
+}
+
+#terminal .terminal-input {
+    background-color: #1b1b1b;
+    border: none;
+    color: #f9f9f9;
+    display: inline-block;
+    font-family: 'Inconsolata', monospace;
+    font-size: 15px;
+    height: 24px;
+    min-width: 400px;
+    outline: none;
+}
+
+#terminal .terminal-row::before {
+    content: "$ lambda: ";
+    color: yellowgreen;
+    font-family: 'Inconsolata', monospace;
+    font-size: 15px;
+}
+
+#terminal .terminal-row.active {
+    border-bottom: 1px solid rgba(166, 255, 30, 0.36);
+}
