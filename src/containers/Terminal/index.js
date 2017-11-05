@@ -24,7 +24,7 @@ class TerminalContainer extends React.Component {
         e.preventDefault();
 
         const command = this.state.input;
-        this.props.history.push(`/?${command}`);
+        this.props.history.push(`?${command}`);
 
         const commands = [...this.state.commands, command];
         this.setState({commands, input: ''});
